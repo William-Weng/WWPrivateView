@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,8 +14,8 @@
 		3DBCD88026F198F300522E3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD87E26F198F300522E3B /* LaunchScreen.storyboard */; };
 		8130039027D5D18100436128 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8130038F27D5D18100436128 /* Constant.swift */; };
 		8130039227D5D19000436128 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8130039127D5D19000436128 /* Extension.swift */; };
+		8158EEB72C8195F100A4F35F /* WWPrivateView in Frameworks */ = {isa = PBXBuildFile; productRef = 8158EEB62C8195F100A4F35F /* WWPrivateView */; };
 		81FE22A32C816BF600165C7F /* WWPrivateView in Frameworks */ = {isa = PBXBuildFile; productRef = 81FE22A22C816BF600165C7F /* WWPrivateView */; };
-		81FE22A62C816CC100165C7F /* WWPrint in Frameworks */ = {isa = PBXBuildFile; productRef = 81FE22A52C816CC100165C7F /* WWPrint */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81FE22A62C816CC100165C7F /* WWPrint in Frameworks */,
 				81FE22A32C816BF600165C7F /* WWPrivateView in Frameworks */,
+				8158EEB72C8195F100A4F35F /* WWPrivateView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +132,7 @@
 			name = Example;
 			packageProductDependencies = (
 				81FE22A22C816BF600165C7F /* WWPrivateView */,
-				81FE22A52C816CC100165C7F /* WWPrint */,
+				8158EEB62C8195F100A4F35F /* WWPrivateView */,
 			);
 			productName = Example;
 			productReference = 3DBCD87026F198EF00522E3B /* Example.app */;
@@ -163,8 +163,7 @@
 			);
 			mainGroup = 3DBCD86726F198EF00522E3B;
 			packageReferences = (
-				81FE22A12C816BF600165C7F /* XCLocalSwiftPackageReference "../WWPrivateView" */,
-				81FE22A42C816CC100165C7F /* XCRemoteSwiftPackageReference "WWPrint" */,
+				8158EEB52C8195F100A4F35F /* XCRemoteSwiftPackageReference "WWPrivateView" */,
 			);
 			productRefGroup = 3DBCD87126F198EF00522E3B /* Products */;
 			projectDirPath = "";
@@ -409,33 +408,26 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		81FE22A12C816BF600165C7F /* XCLocalSwiftPackageReference "../WWPrivateView" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../WWPrivateView;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
-		81FE22A42C816CC100165C7F /* XCRemoteSwiftPackageReference "WWPrint" */ = {
+		8158EEB52C8195F100A4F35F /* XCRemoteSwiftPackageReference "WWPrivateView" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/William-Weng/WWPrint";
+			repositoryURL = "https://github.com/William-Weng/WWPrivateView";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.3.1;
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8158EEB62C8195F100A4F35F /* WWPrivateView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8158EEB52C8195F100A4F35F /* XCRemoteSwiftPackageReference "WWPrivateView" */;
+			productName = WWPrivateView;
+		};
 		81FE22A22C816BF600165C7F /* WWPrivateView */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = WWPrivateView;
-		};
-		81FE22A52C816CC100165C7F /* WWPrint */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 81FE22A42C816CC100165C7F /* XCRemoteSwiftPackageReference "WWPrint" */;
-			productName = WWPrint;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

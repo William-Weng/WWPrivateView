@@ -1,12 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "wwprint",
+      "identity" : "wwprivateview",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/William-Weng/WWPrint",
+      "location" : "https://github.com/William-Weng/WWPrivateView",
       "state" : {
-        "revision" : "8f5928f5d36624d77f8fc563fd8e31a59cfac6b6",
-        "version" : "1.3.1"
+        "revision" : "886aa602c27344fca99139007478a6b17c0b331f",
+        "version" : "1.0.0"
       }
     }
   ],
